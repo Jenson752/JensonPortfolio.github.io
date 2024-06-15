@@ -25,9 +25,29 @@ This project aims to enhance the security features of the Academic Information S
 - **Data Classification:** Classify data based on sensitivity levels (e.g., personal information, academic records).
 - **Encryption and Hashing:** Implement encryption mechanisms for sensitive data fields and hashing for passwords.
 
-#### 2.3 Auditing and Logging
-- **Audit Trail:** Implement logging mechanisms to record all database activities, including structural changes, data modifications, and permission changes.
-- **Daily Audit Reports:** Describe how daily audit reports are generated to monitor user activities and database changes.
+### 2.3 Auditing and Logging
+
+#### Audit Trail
+
+##### SQL Server Built-in Auditing
+
+- **DDL Auditing**:
+  - Enable SQL Server Audit to monitor and log Data Definition Language (DDL) changes such as schema modifications (e.g., table creations, alterations, drops).
+  - Configure audit specifications to capture schema changes at the server or database level.
+
+- **Permission Changes**:
+  - Utilize SQL Server Audit to track changes in database permissions, including role assignments and permission grants/restrictions.
+  - Define audit actions to record permission changes for auditing and compliance purposes.
+
+- **Login and Logout Events**:
+  - Implement SQL Server Audit to capture successful and unsuccessful login attempts, as well as logout events.
+  - Configure audit specifications to monitor user sessions and login activities.
+
+##### Trigger-based Auditing (DML Auditing)
+
+- **Data Modification Logging**:
+  - Implement triggers on critical tables to log Data Manipulation Language (DML) changes such as inserts, updates, and deletes.
+  - Design trigger logic to capture before and after values of modified data into an audit table for detailed tracking and historical analysis.
 
 ### 3. Documentation and Validation
 
