@@ -25,7 +25,7 @@ To develop and deploy a comprehensive BI solution that enhances Giant Bicycle Co
 ### 1. Data Warehousing
 - **Tools Used**: SQL Server Management Studio (SSMS)
 - **Process**:
-  - Extract data from various operational systems and external sources. In this case, the company database backup (.bak) file will be srestored and utilized. 
+  - Extract data from various operational systems and external sources. In this case, the company database backup (.bak) file will be restored and utilized. 
   - Load the data into a staging area in the Data Warehouse.
   - Transform and integrate the data into a unified schema for further analysis.
 
