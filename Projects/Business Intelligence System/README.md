@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-**Giant Bicycle Corporation** was founded in 1972 in Taiwan and has become a major player in the global bicycle manufacturing industry with a 10.5% market share. Known for its complex distribution network and e-commerce platform, Giant seeks to enhance its online sales performance through a robust Business Intelligence (BI) solution.
+**Giant Bicycle Corporation** was founded in 1972 in Taiwan and has become a major player in the global bicycle manufacturing industry with a 10.5% market share. Known for its complex distribution network and e-commerce platform, Giant seeks to enhance its online sales performance through a robust Business Intelligence (BI) solution. As the **Business Intelligence Consultant** appointed by Giant Bicycle Corporation, I have been tasked with leading this critical BI initiative.
 
 ## Project Aim and Objectives
 
@@ -10,25 +10,22 @@
 To develop and deploy a comprehensive BI solution that enhances Giant Bicycle Corporation’s understanding of its online sales performance, facilitating improved decision-making and strategic planning.
 
 ### Objectives
-1. **Consolidate and Integrate Data**:
-   - Unify data from external sources into a comprehensive data warehouse, creating a single source of truth for robust and reliable analysis.
 
-2. **Enhance Analytical and Visualization Capabilities**:
-   - Develop a multi-dimensional data model to facilitate in-depth analysis across different dimensions (time, geography, product categories).
-   - Create interactive dashboards to visualize key metrics and trends in an accessible format for decision-makers.
+1. **Integrate Data**:
+   - Consolidate data from various sources into a unified data warehouse for reliable and comprehensive analysis.
 
-3. **Enable Advanced Analysis and Insights**:
-   - Implement advanced metric calculations using MDX (Multidimensional Expressions) to support complex queries and provide detailed business insights, uncovering opportunities to optimize online sales strategies.
+2. **Enhance Analytics and Visualization**:
+   - Develop a multi-dimensional model for detailed analysis and create interactive dashboards for key metrics and trends.
 
-4. **Support Ongoing Performance Improvement**:
-   - Establish a Business Performance Management (BPM) framework for continuous monitoring, analysis, and improvement of business operations based on the insights generated from the BI solution.
+3. **Drive Continuous Improvement**:
+   - Conduct Business Performance Strategy (BPM) strategy discussion for ongoing performance monitoring and strategic enhancements based on BI insights.
 
 ## Methodology
 
 ### 1. Data Warehousing
 - **Tools Used**: SQL Server Management Studio (SSMS)
 - **Process**:
-  - Extract data from various operational systems and external sources.
+  - Extract data from various operational systems and external sources. In this case, the company database backup (.bak) file will be srestored and utilized. 
   - Load the data into a staging area in the Data Warehouse.
   - Transform and integrate the data into a unified schema for further analysis.
 
@@ -57,6 +54,6 @@ To develop and deploy a comprehensive BI solution that enhances Giant Bicycle Co
   - Develop a Business Performance Management (BPM) strategy to recommend actionable improvements.
   - Present findings and recommendations to the Senior Leadership team with supporting data visualizations.
 
-## Conclusion
+## Impact
 
 This BI initiative will empower Giant Bicycle Corporation with data-driven insights to optimize their e-commerce operations and support strategic growth. By leveraging advanced data warehousing, multi-dimensional modelling, and analytics, the company aims to enhance its market share and operational efficiency.
