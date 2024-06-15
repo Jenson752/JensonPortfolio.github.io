@@ -1,0 +1,103 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>Giant Bikes - Demo</Database>
+    <Server>MSI\MSSQLSERVERNEW</Server>
+    <ConnectionString>Data Source=MSI\MSSQLSERVERNEW;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>hCzNb+DHpkLSBhGhcByvHfDyU8o=30/11/2022 3:57:28 PM30/11/2022 3:57:28 PM</TimeStamp>
+        <ID>
+          <String>Giant Bikes Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>Tk86x99wSxynHbAklf9ST5phbj8=3/1/2023 4:06:10 PM30/11/2022 7:50:00 PM</TimeStamp>
+        <ID>
+          <String>Giant Bikes Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>g1H1inLOUvFL4R7JPyE+c2QHulM=2/12/2022 8:59:00 AM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Employee</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4qXxmXVWigH9O+JCpsZz302MGTE=3/1/2023 4:06:10 PM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Reseller</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>lVYb7Ub2tEqliPZsOGapjMi4DD0=3/1/2023 4:06:10 PM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>BEEp7Jw9aY4wFEervWyYotrcLN4=3/1/2023 10:07:54 PM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Product</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>p0lVxNhptVARcaOVf/T8e3LkYBY=3/1/2023 4:06:10 PM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Promotion</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>4cZJztqzFam8e2XfWH58mZVqSYI=2/12/2022 8:59:00 AM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Sales Territory</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>etTOonSGPZCZpmnV/uUUPtVElqE=3/1/2023 4:06:10 PM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Dim Customer</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>jRdV5qTDcZDRuCcnW29q0Q5gd0Q=3/2/2023 2:00:48 PM2/12/2022 8:37:53 AMzIkFUQ+UqQTjPDxy42c1GuQpHqg=2/12/2022 8:37:53 AM2/12/2022 8:37:53 AM</TimeStamp>
+        <ID>
+          <String>Giant Bikes Data Warehouse</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>E8+EEwwzvaCG7auYeyGI4C0TQbY=30/11/2022 3:52:59 PM30/11/2022 3:52:58 PM</TimeStamp>
+      <ID>
+        <String>Giant Bikes - Demo</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-02-03T06:00:52.756667Z</LastDeployed>
+</DeploymentSnapshot>
