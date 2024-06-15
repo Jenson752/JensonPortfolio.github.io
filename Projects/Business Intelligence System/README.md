@@ -1,4 +1,4 @@
-# Business Intelligence Solution for Giant Bicycle Corporation
+# Business Intelligence Solution for Giant Bicycle Corporation (Case Study)
 
 ## Project Overview
 
@@ -25,7 +25,7 @@ To develop and deploy a comprehensive BI solution that enhances Giant Bicycle Co
 ### 1. Data Warehousing
 - **Tools Used**: SQL Server Management Studio (SSMS)
 - **Process**:
-  - Extract data from various operational systems and external sources. In this case, the company database backup (.bak) file will be restored and utilized. 
+  - Extract data from external sources. In this case, the [company database backup (.bak) file](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/Business%20Intelligence%20System/Giant%20Trek%20Bikes%20DataWarehouse.bak) will be restored and utilized. 
   - Load the data into a staging area in the Data Warehouse.
   - Transform and integrate the data into a unified schema for further analysis.
 
