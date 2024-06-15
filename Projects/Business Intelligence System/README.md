@@ -51,3 +51,7 @@ To develop and deploy a comprehensive BI solution that enhances Giant Bicycle Co
 ## Impact
 
 This BI initiative will empower Giant Bicycle Corporation with data-driven insights to optimize their e-commerce operations and support strategic growth. By leveraging advanced data warehousing, multi-dimensional modelling, and analytics, the company aims to enhance its market share and operational efficiency.
+
+## Dashboard
+
+PLease feel free to download and explore on [my interactive dashboard](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/Business%20Intelligence%20System/Giant%20Bike%20Visualization.pbix) using Power BI, where you can interact with the visualizations and gain insights from the data. 
