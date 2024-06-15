@@ -9,7 +9,7 @@ This project aims to enhance the security features of the Academic Information S
 - Ensure adherence to security best practices and compliance with specified security requirements.
 - Enhance data protection, user access management, and auditing capabilities within the system.
 
-## Methodologies for Database Security
+## Methodologies for Database Security Implementation
 
 ### 1. Database Design and Security Architecture
 - Describe the initial database architecture and identify security vulnerabilities.
@@ -21,9 +21,35 @@ This project aims to enhance the security features of the Academic Information S
 - **Authorization Matrix:** Define SQL roles for DB Admins, Students, and Lecturers with least privilege principles.
 - **Access Control:** Implement methods used to enforce access control, including views, stored procedures, and role-based security.
 
-#### 2.2 Data Protection
-- **Data Classification:** Classify data based on sensitivity levels (e.g., personal information, academic records).
-- **Encryption and Hashing:** Implement encryption mechanisms for sensitive data fields and hashing for passwords.
+### 2.2 Data Protection
+
+#### Data Classification
+
+- **Identify Data Categories**:
+  - Classify data into categories such as personal information (e.g., student names, addresses), academic records (e.g., grades, course enrollments), and administrative data (e.g., user credentials).
+
+- **Assign Sensitivity Levels**:
+  - Determine sensitivity levels (e.g., public, confidential, sensitive) for each data category based on regulatory requirements and organizational policies.
+
+#### Encryption 
+
+- **Encryption**:
+  - Encrypt sensitive data fields (e.g., passwords, personal information) using strong encryption algorithms like AES-256. Manage encryption keys securely and rotate them regularly.
+
+#### Backup and Recovery
+
+- **Automated Backup**:
+  - Schedule regular automated backups of the database to capture changes. Ensure backups are performed at specified intervals (e.g., daily, weekly) to maintain data availability.
+
+- **Recovery Point Objective (RPO)**:
+  - Define a maximum RPO (Recovery Point Objective) of 6 hours to limit data loss in case of system failure or corruption. Ensure backup frequency aligns with this objective.
+
+- **Backup Storage**:
+  - Store backups securely in a separate location or use cloud-based storage for redundancy and disaster recovery purposes.
+
+- **Backup Validation**:
+  - Regularly validate backup integrity and test restoration procedures to ensure backups are reliable and can be restored promptly when needed.
+
 
 ### 2.3 Auditing and Logging
 
