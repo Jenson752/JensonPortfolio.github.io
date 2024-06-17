@@ -7,7 +7,7 @@ This repository explores key text analytics techniques and builds a supervised t
 - **Project Part A**: Focuses on fundamental text processing tasks such as tokenization, stop word removal, stemming, POS tagging, and computing sentence probabilities using bigram models.
 - **Project Part B**: Involves dataset selection, exploratory data analysis (EDA), and building supervised text classification models using Python and SAS Text Miner. This includes hyperparameter tuning and evaluating model performance.
 
-## Project Part A
+## [Project Part A](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/TXSA/TXSA%20Part%20A.ipynb)
 
 ### Text Preprocessing and Analysis
 
@@ -70,7 +70,7 @@ Using **Data_3.txt**, which contains sentences marked by <s> and </s> tags:
 
    - Implement both unsmoothed and smoothed bigram models in Python to calculate sentence probabilities programmatically.
 
-## Project Part B
+## [Project Part B](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/TXSA/TXSA%20Part%20B.ipynb)
 
 ### Dataset Selection and EDA
 
