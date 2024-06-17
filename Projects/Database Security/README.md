@@ -57,13 +57,13 @@ This project aims to enhance the security features of the Academic Information S
 #### 2.2 Transparent Data Encryption (TDE)
 - Encrypts the entire AIS database to protect data at rest.
 
-### 2.3 Column-Level Encryption
+#### 2.3 Column-Level Encryption
 - Provides selective encryption for specific sensitive columns, such as passwords.
 
-### 2.4 Row-Level Security (RLS)
+#### 2.4 Row-Level Security (RLS)
 - Restricts data access at the row level based on user roles or identities.
 
-### 2.5 Backup 
+#### 2.5 Backup 
 - **Full Database Backup**:
   - Performed comprehensive backups of the AIS database to safeguard against data loss, capturing all data, schema, and configuration settings.
 - **Transaction Log Backup**:
