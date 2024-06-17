@@ -15,30 +15,35 @@ This project aims to enhance the security features of the Academic Information S
 
 ### 1. Permission Management
 
-#### 1.1 Authorization Matrix
+#### 1.1 Authentication
+- **Login Creation and Management**: 
+  - DB Admins are responsible for creating and managing user logins.
+  - User IDs are created for students and lecturers, mapped to their respective roles to facilitate access and management.
+
+#### 1.2 Authorization (Privilege Control)
 - **Role Definitions**:
-  - Define specific roles for **DB Admins**, **Students**, and **Lecturers**.
-  - **DB Admins**: Manage database objects but restricted from sensitive student and lecturer data.
-  - **Students**: Can view and update their personal data; cannot access others' data.
-  - **Lecturers**: Manage their own details and their students’ academic records within their subjects.
+  - **DB Admins**: Have broad control over the database, including user and permission management, but are restricted from accessing sensitive academic data and user passwords directly.
+  - **Lecturers**: Can view and update their personal information, manage academic records for their students, and view relevant student data within their department.
+  - **Students**: Can view and update their own personal details and academic results, with no access to other students' information.
 
 - **Least Privilege Principle**:
-  - Ensure each role has only the necessary permissions to perform their tasks.
-  - Regularly review and adjust permissions to maintain minimal access rights.
+  - Permissions are granted based on the minimum level required for each role to perform their tasks.
+  - Regular reviews ensure that roles maintain only necessary access rights.
 
-#### 1.2 Access Control
+#### 1.3 Access Control Mechanisms
 - **Role-Based Security**:
-  - Use SQL Server roles to efficiently manage permissions, assigning access based on roles rather than individual users.
+  - Permissions are managed using predefined SQL Server roles, streamlining control by assigning access based on roles rather than individual users.
 
 - **Views**:
-  - Create SQL views to control and filter data access. For instance, use views to restrict students to their own records or to filter lecturer views to only their students' data.
+  - Database views are utilized to filter and restrict access to sensitive information, ensuring DB Admins and other roles only see non-sensitive data.
 
 - **Stored Procedures**:
-  - Utilize stored procedures to handle complex operations securely and enforce business rules, reducing direct access to tables and enhancing security.
+  - Operations are performed via stored procedures to enforce business rules and security policies, minimizing direct access to tables.
 
-- **Row-Level Security (RLS)**:
-  - Implement RLS policies to restrict access to rows based on user roles or attributes, ensuring users only see data relevant to them.
-
+- **Dynamic Data Masking and Row-Level Security (RLS)**:
+  - Sensitive data fields are masked to prevent unauthorized viewing.
+  - Row-Level Security is implemented to ensure users can only access records relevant to their own role or identity, enhancing data isolation and protection.
+    
 ### 2. Data Protection
 
 #### 2.1 Data Classification
@@ -49,25 +54,24 @@ This project aims to enhance the security features of the Academic Information S
 - **Assign Sensitivity Levels**:
   - Determine sensitivity levels (e.g., public, confidential, sensitive) for each data category based on regulatory requirements and organizational policies.
 
-#### 2.2 Encryption 
+#### 2.2 Transparent Data Encryption (TDE)
+- Encrypts the entire AIS database to protect data at rest.
 
-- **Encryption**:
-  - Encrypt sensitive data fields (e.g., passwords, personal information) using strong encryption algorithms like AES-256. Manage encryption keys securely and rotate them regularly.
+### 2.3 Column-Level Encryption
+- Provides selective encryption for specific sensitive columns, such as passwords.
 
-#### 2.3 Backup and Recovery
+### 2.4 Row-Level Security (RLS)
+- Restricts data access at the row level based on user roles or identities.
 
-- **Automated Backup**:
-  - Schedule regular automated backups of the database to capture changes. Ensure backups are performed at specified intervals (e.g., daily, weekly) to maintain data availability.
-
-- **Recovery Point Objective (RPO)**:
-  - Define a maximum RPO (Recovery Point Objective) of 6 hours to limit data loss in case of system failure or corruption. Ensure backup frequency aligns with this objective.
-
-- **Backup Storage**:
-  - Store backups securely in a separate location or use cloud-based storage for redundancy and disaster recovery purposes.
-
-- **Backup Validation**:
-  - Regularly validate backup integrity and test restoration procedures to ensure backups are reliable and can be restored promptly when needed.
-
+### 2.5 Backup 
+- **Full Database Backup**:
+  - Performed comprehensive backups of the AIS database to safeguard against data loss, capturing all data, schema, and configuration settings.
+- **Transaction Log Backup**:
+  - Regularly backed up transaction logs to enable point-in-time recovery and maintain transaction integrity.
+- **Master Key and Certificate Backup**:
+  - Backed up essential cryptographic keys and certificates to ensure the recoverability of encrypted data.
+- **Backup Automation**:
+  - Implemented automated backup processes to maintain data protection and minimize potential data loss (Recovery Point Objective of 6 hours).
 
 ### 3. Auditing and Logging
 
