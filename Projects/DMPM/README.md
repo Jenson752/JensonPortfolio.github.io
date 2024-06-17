@@ -87,7 +87,7 @@ The [customer churning dataset](https://www.kaggle.com/datasets/whenamancodes/cr
 - HP models consistently outperformed others in accuracy and misclassification rates, especially HP Forest and HP Tree.
 - Ensemble model showed competitive performance, leveraging strengths of individual models to achieve improved accuracy.
 
-## Document
+## Project Document
 For a more comprehensive analysis and detailed implementation description, feel free to refer the [project document](https://docs.google.com/document/d/e/2PACX-1vSnwY0NoWIPwtrNVzbBqRh7EhKSHsiPZGshnGLF-tKqmPyZ8QgEFjJXa56EGNGV7g/pub).
  
 
