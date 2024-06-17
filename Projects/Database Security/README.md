@@ -11,19 +11,15 @@ This project aims to enhance the security features of the Academic Information S
 
 ## Methodologies for Database Security Implementation
 
-### 1. Database Design and Security Architecture
-- Describe the initial database architecture and identify security vulnerabilities.
-- Outline the strategies and methodologies used to enhance database security.
+### Security Requirements and Implementation
 
-### 2. Security Requirements and Implementation
-
-#### 2.1 Permission Management
+#### 1. Permission Management
 - **Authorization Matrix:** Define SQL roles for DB Admins, Students, and Lecturers with least privilege principles.
 - **Access Control:** Implement methods used to enforce access control, including views, stored procedures, and role-based security.
 
-### 2.2 Data Protection
+### 2. Data Protection
 
-#### Data Classification
+#### 2.1 Data Classification
 
 - **Identify Data Categories**:
   - Classify data into categories such as personal information (e.g., student names, addresses), academic records (e.g., grades, course enrollments), and administrative data (e.g., user credentials).
@@ -31,12 +27,12 @@ This project aims to enhance the security features of the Academic Information S
 - **Assign Sensitivity Levels**:
   - Determine sensitivity levels (e.g., public, confidential, sensitive) for each data category based on regulatory requirements and organizational policies.
 
-#### Encryption 
+#### 2.2 Encryption 
 
 - **Encryption**:
   - Encrypt sensitive data fields (e.g., passwords, personal information) using strong encryption algorithms like AES-256. Manage encryption keys securely and rotate them regularly.
 
-#### Backup and Recovery
+#### 2.3 Backup and Recovery
 
 - **Automated Backup**:
   - Schedule regular automated backups of the database to capture changes. Ensure backups are performed at specified intervals (e.g., daily, weekly) to maintain data availability.
@@ -51,11 +47,11 @@ This project aims to enhance the security features of the Academic Information S
   - Regularly validate backup integrity and test restoration procedures to ensure backups are reliable and can be restored promptly when needed.
 
 
-### 2.3 Auditing and Logging
+### 3. Auditing and Logging
 
 #### Audit Trail
 
-##### SQL Server Built-in Auditing
+##### 3.1 SQL Server Built-in Auditing
 
 - **DDL Auditing**:
   - Enable SQL Server Audit to monitor and log Data Definition Language (DDL) changes such as schema modifications (e.g., table creations, alterations, drops).
@@ -69,16 +65,12 @@ This project aims to enhance the security features of the Academic Information S
   - Implement SQL Server Audit to capture successful and unsuccessful login attempts, as well as logout events.
   - Configure audit specifications to monitor user sessions and login activities.
 
-##### Trigger-based Auditing (DML Auditing)
+##### 3.2 Trigger-based Auditing (DML Auditing)
 
 - **Data Modification Logging**:
   - Implement triggers on critical tables to log Data Manipulation Language (DML) changes such as inserts, updates, and deletes.
   - Design trigger logic to capture before and after values of modified data into an audit table for detailed tracking and historical analysis.
 
-### 3. Documentation and Validation
+### 4. testing and Validation
 
-#### 3.1 Data Dictionary
-- Provide an updated Data Dictionary detailing database entities, attributes, and their security classifications.
-
-#### 3.2 Testing and Validation
 - **Test Cases Document:** Include SQL scripts for testing security measures and validating database functionalities (`DBS_TestCases_<group number>.docx`).
