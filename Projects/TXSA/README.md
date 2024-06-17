@@ -56,7 +56,7 @@ By using the **Data_2.txt** file to demonstrate:
 
 ### Sentence Probabilities
 
-Using **Data_3.txt**, which contains sentences marked by <s> and </s> tags:
+Using **Data_3.txt**, which contains sentences marked by s and /s tags:
 
 1. **Unsmoothed Bigram Model**
 
