@@ -95,4 +95,4 @@ This project aims to enhance the security features of the Academic Information S
 
 ### 4. testing and Validation
 
-- **Test Cases Document:** Include SQL scripts for testing security measures and validating database functionalities (`DBS_TestCases_<group number>.docx`).
+- **Test Cases Document:** Included SQL scripts for testing security measures and validating database functionalities.
