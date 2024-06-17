@@ -13,9 +13,31 @@ This project aims to enhance the security features of the Academic Information S
 
 ### Security Requirements and Implementation
 
-#### 1. Permission Management
-- **Authorization Matrix:** Define SQL roles for DB Admins, Students, and Lecturers with least privilege principles.
-- **Access Control:** Implement methods used to enforce access control, including views, stored procedures, and role-based security.
+### 1. Permission Management
+
+#### 1.1 Authorization Matrix
+- **Role Definitions**:
+  - Define specific roles for **DB Admins**, **Students**, and **Lecturers**.
+  - **DB Admins**: Manage database objects but restricted from sensitive student and lecturer data.
+  - **Students**: Can view and update their personal data; cannot access others' data.
+  - **Lecturers**: Manage their own details and their students’ academic records within their subjects.
+
+- **Least Privilege Principle**:
+  - Ensure each role has only the necessary permissions to perform their tasks.
+  - Regularly review and adjust permissions to maintain minimal access rights.
+
+#### 1.2 Access Control
+- **Role-Based Security**:
+  - Use SQL Server roles to efficiently manage permissions, assigning access based on roles rather than individual users.
+
+- **Views**:
+  - Create SQL views to control and filter data access. For instance, use views to restrict students to their own records or to filter lecturer views to only their students' data.
+
+- **Stored Procedures**:
+  - Utilize stored procedures to handle complex operations securely and enforce business rules, reducing direct access to tables and enhancing security.
+
+- **Row-Level Security (RLS)**:
+  - Implement RLS policies to restrict access to rows based on user roles or attributes, ensuring users only see data relevant to them.
 
 ### 2. Data Protection
 
@@ -51,7 +73,7 @@ This project aims to enhance the security features of the Academic Information S
 
 #### Audit Trail
 
-##### 3.1 SQL Server Built-in Auditing
+#### 3.1 SQL Server Built-in Auditing
 
 - **DDL Auditing**:
   - Enable SQL Server Audit to monitor and log Data Definition Language (DDL) changes such as schema modifications (e.g., table creations, alterations, drops).
@@ -65,7 +87,7 @@ This project aims to enhance the security features of the Academic Information S
   - Implement SQL Server Audit to capture successful and unsuccessful login attempts, as well as logout events.
   - Configure audit specifications to monitor user sessions and login activities.
 
-##### 3.2 Trigger-based Auditing (DML Auditing)
+#### 3.2 Trigger-based Auditing (DML Auditing)
 
 - **Data Modification Logging**:
   - Implement triggers on critical tables to log Data Manipulation Language (DML) changes such as inserts, updates, and deletes.
