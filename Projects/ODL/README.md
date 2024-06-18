@@ -186,13 +186,13 @@ While the Xception model in this study achieved a respectable validation accurac
 
 To enhance the classification results:
 
-- **Advanced Data Augmentation**: Utilize advanced augmentation methods such as geometric and color transformations to generate more diverse training data and reduce overfitting (Borwarnginn et al., 2021).
+- **Advanced Data Augmentation**: Utilize advanced augmentation methods such as geometric and color transformations to generate more diverse training data and reduce overfitting.
   
-- **Transfer Learning**: Incorporate more pre-trained models like MobileNetV2, NASNet, DenseNet, and ResNet. Fine-tuning these models can significantly improve accuracy (Ayanzadeh & Vahidnia, 2018).
+- **Transfer Learning**: Incorporate more pre-trained models like MobileNetV2, NASNet, DenseNet, and ResNet. Fine-tuning these models can significantly improve accuracy.
   
-- **Hybrid Models**: Explore hybrid or ensemble models that combine multiple CNN architectures and pre-trained models to leverage their respective strengths (Cui et al., 2023).
+- **Hybrid Models**: Explore hybrid or ensemble models that combine multiple CNN architectures and pre-trained models to leverage their respective strengths.
   
-- **New Architectures**: Experiment with newer architectures such as NASNetMobile and EfficientNetV2M, which have shown superior performance compared to older models like ResNet and InceptionV3 (B. Valarmathi et al., 2023).
+- **New Architectures**: Experiment with newer architectures such as NASNetMobile and EfficientNetV2M, which have shown superior performance compared to older models like ResNet and InceptionV3.
 
 By implementing methodologies from existing literature and exploring new techniques in neural network architectures, we can enhance the accuracy and robustness of future classification models in this domain.
 
@@ -200,4 +200,4 @@ Continuous exploration of advancements in neural networks will be essential for 
 
 ## Practical Solutions
 
-For a more in-depth look into the practical solutions and detailed methodologies used in this study, please refer to the Jupyter Notebook.
+For a more in-depth look into the practical solutions and detailed methodologies used in this study, please refer to the [Jupyter Notebook](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/ODL/ODL_notebook.ipynb).
