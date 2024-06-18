@@ -198,3 +198,6 @@ By implementing methodologies from existing literature and exploring new techniq
 
 Continuous exploration of advancements in neural networks will be essential for achieving further improvements.
 
+## Practical Solutions
+
+For a more in-depth look into the practical solutions and detailed methodologies used in this study, please refer to the Jupyter Notebook.
