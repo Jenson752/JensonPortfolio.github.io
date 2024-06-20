@@ -3,7 +3,7 @@
 My portfolio's website uses the "Massively" template by HTML5 UP.
 
 - **Original Template**: Massively
-- **Author**: @ajlkn from HTML5 UP
+- **Author**: @ajlkn
 - **Website**: [HTML5 UP](https://html5up.net)
 - **License**: [Creative Commons Attribution 3.0](https://html5up.net/license)
 
