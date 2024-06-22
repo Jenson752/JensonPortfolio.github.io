@@ -94,5 +94,5 @@ You can explore the practical implementation of the steps described above throug
 - **[Extracting Politicians' Mentions](https://github.com/Jenson752/JensonPortfolio.github.io/blob/main/Projects/politician-sentiment-analysis/extract_replies.py):** This script collects tweets that mention the politicians, providing insights into public interactions and responses.
   - Included Step [1](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#1-web-scraping), [2](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#2-sentiment-classification), [4](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#4-data-storage)
 
-
+##
     
