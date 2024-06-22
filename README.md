@@ -15,7 +15,3 @@ My portfolio's website uses the "Massively" template by HTML5 UP.
   - [jQuery](https://jquery.com)
   - [Scrollex](https://github.com/ajlkn/jquery.scrollex)
   - [Responsive Tools](https://github.com/ajlkn/responsive-tools)
-
-### Modifications
-
-- Describe any modifications or customizations you made to the original template here.
