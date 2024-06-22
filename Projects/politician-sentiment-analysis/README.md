@@ -95,4 +95,25 @@ You can explore the practical implementation of the steps described above throug
   - Included Step [1](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#1-web-scraping), [2](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#2-sentiment-classification), [4](https://github.com/Jenson752/JensonPortfolio.github.io/tree/main/Projects/politician-sentiment-analysis#4-data-storage)
 
 ##
+
+### 5. Data Cleaning and Pre-processing
+
+In this step, it will be more towards in modifying tweets' text. To be exact:  
+
+- Clean tweets by using Regular Expression
+  - Remove ULRs
+  - Remove Mentions
+  - Remove hashtag symbol but keep the word
+  - Remove punctuation except for underscores (to retain words like email_address)
+  - Keep only ASCII characters, remove garbled Unicode characters (example: 'ðÿ')
+  - Convert to lowercase to ensure consistent format
+- Removing Tweet text that stored as an empty string (not detected as Null Value)
+- Tokenization for easier analysis in either sentence and also word
+- Count Words
+- Removing Stopwords of:
+  - English using NLTK packages
+  - Malay using [Malaysian Stopwords dataset](https://www.kaggle.com/datasets/heeraldedhia/stop-words-in-28-languages?select=malaysian.txt) obtained from kaggle
+- Lemmatization to reduce word to base form
+  - Process english words by using NLTK library
+  - Process malay words by using MALAYA library
     
